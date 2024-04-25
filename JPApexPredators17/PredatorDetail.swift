@@ -9,10 +9,27 @@ import SwiftUI
 
 struct PredatorDetail: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            ZStack {
+                // background image
+                
+                // dino image
+            }
+            
+            // dino name
+            
+            // current location map
+            
+            // appears in list
+            
+            // movie moments
+            
+            // link to web
+        }
     }
 }
 
 #Preview {
     PredatorDetail()
+        .preferredColorScheme(.dark)
 }
