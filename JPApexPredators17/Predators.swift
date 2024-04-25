@@ -50,6 +50,7 @@ class Predators {
     }
     
     func filter(by type: PredatorType) {
+        apexPredators = allApexPredators
         if type == .all {
             apexPredators = allApexPredators
         } else {
