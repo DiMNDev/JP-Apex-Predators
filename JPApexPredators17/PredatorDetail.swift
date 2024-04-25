@@ -10,14 +10,22 @@ import SwiftUI
 struct PredatorDetail: View {
     let predator: ApexPredators
     var body: some View {
+        GeometryReader { geo in
         ScrollView {
-            ZStack {
+            ZStack(alignment: .bottomTrailing) {
                 // background image
                 Image(predator.type.rawValue)
                     .resizable()
                     .scaledToFit()
                 
                 // dino image
+                Image(predator.image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: geo.size.width/1.5, height: geo.size.height/3)
+                    .scaleEffect(x: -1)
+                    .shadow(color: .black, radius: 7)
+                    .offset(y: 20)
             }
             
             // dino name
@@ -31,6 +39,7 @@ struct PredatorDetail: View {
             // link to web
         }
         .ignoresSafeArea()
+        }
     }
 }
 
