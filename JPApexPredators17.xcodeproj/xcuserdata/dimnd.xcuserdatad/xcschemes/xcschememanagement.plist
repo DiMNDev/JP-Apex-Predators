@@ -12,7 +12,20 @@
 		<key>JPApexPredators17.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8412F5CE2BD6E00500BC8101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84A7A5312BDB00760094394F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
