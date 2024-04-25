@@ -45,6 +45,18 @@ struct PredatorDetail: View {
                     }
 
                     // movie moments
+                    Text("Movie Moments")
+                        .font(.title)
+                        .padding(.top, 15)
+                    
+                    ForEach(predator.movieScenes) { scene in
+                        Text(scene.movie)
+                            .font(.title2)
+                            .padding(.vertical, 1)
+                        
+                        Text(scene.sceneDescription)
+                            .padding(.bottom, 15)
+                    }
                     
                     // link to web
                 }
