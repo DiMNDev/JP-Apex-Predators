@@ -29,7 +29,6 @@ struct PredatorDetail: View {
                 }
                 
                 VStack(alignment: .leading) {
-                    
                     // dino name
                     Text(predator.name)
                         .font(.largeTitle)
@@ -59,11 +58,17 @@ struct PredatorDetail: View {
                     }
                     
                     // link to web
+                    Text("Read More:")
+                        .font(.caption)
+                    Link(predator.link, destination: URL(string: predator.link)!)
+                        .font(.caption)
+                        .foregroundStyle(.blue)
                 }
                 .frame(width: geo.size.width, alignment: .leading)
                 .padding()
+                .padding(.bottom)
             }
-        .ignoresSafeArea()
+            .ignoresSafeArea()
         }
     }
 }
