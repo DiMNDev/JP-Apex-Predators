@@ -37,7 +37,13 @@ struct PredatorDetail: View {
                     // current location map
                     
                     // appears in list
-                    
+                    Text("Appears In:")
+                        .font(.title3)
+                    ForEach(predator.movies, id: \.self) { movie in
+                        Text("•" + movie)
+                            .font(.subheadline)
+                    }
+
                     // movie moments
                     
                     // link to web
