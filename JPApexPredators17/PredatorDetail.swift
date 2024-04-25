@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct PredatorDetail: View {
+    let predator: ApexPredators
     var body: some View {
         ScrollView {
             ZStack {
                 // background image
+                Image(predator.type.rawValue)
+                    .resizable()
+                    .scaledToFit()
                 
                 // dino image
             }
@@ -26,10 +30,11 @@ struct PredatorDetail: View {
             
             // link to web
         }
+        .ignoresSafeArea()
     }
 }
 
 #Preview {
-    PredatorDetail()
+    PredatorDetail(predator: Predators().apexPredators[2])
         .preferredColorScheme(.dark)
 }
