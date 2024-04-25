@@ -23,9 +23,7 @@ struct ContentView: View {
         NavigationStack {
             List(filterDinos) { predator in
                 NavigationLink {
-                    Image(predator.image)
-                        .resizable()
-                        .scaledToFit()
+                    PredatorDetail()
                 } label: {
                     HStack {
                         // Dinosaur Image
