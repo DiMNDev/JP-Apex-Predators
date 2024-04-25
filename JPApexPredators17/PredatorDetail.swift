@@ -55,7 +55,22 @@ struct PredatorDetail: View {
                             }
                             .annotationTitles(.hidden)
                         }
-                            .frame(height: 125)
+                        .frame(height: 125)
+                        .clipShape(.rect(cornerRadius: 15))
+                        .overlay(alignment: .trailing) {
+                            Image(systemName: "greaterthan")
+                                .imageScale(.large)
+                                .font(.title3)
+                                .padding(.trailing, 5)
+                        }
+                        .overlay(alignment: .topLeading) {
+                            Text("Current Location")
+                                .padding([.leading, .bottom], 5)
+                                .padding(.trailing, 8)
+                                .background(.black.opacity(0.33))
+                                .clipShape(.rect(bottomTrailingRadius: 15))
+                                .fontWeight(.bold)
+                        }
                         .clipShape(.rect(cornerRadius: 15))
                     }
                     // appears in list
